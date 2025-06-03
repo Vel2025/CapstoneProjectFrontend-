@@ -1,12 +1,18 @@
-# React + Vite
+# TrialSync
+A MERN stack application for managing clinical trial studies, including participant data and trial phases.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+TrialSync enables researchers to manage clinical trial participants and track trial progress. Features include secure user authentication, participant record management, trial phase tracking, and a responsive React frontend.
 
-Currently, two official plugins are available:
+## Usage
+- Register or log in to access the dashboard.
+- Add, view, update, or delete participant records.
+- Create, view, or update clinical trial details.
+- Navigate between Home, Participants, Trials, and Login pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Technologies
+- MongoDB: Database for storing users, participants, and trials.
+- Express.js: Backend API server.
+- React: Frontend with React Router and Hooks.
+- Node.js: Server runtime.
+- CSS: Styling for responsive UI.
