@@ -1,5 +1,5 @@
 
-Backend git repo link: 
+Backend git repo link: https://github.com/Vel2025/CapstoneProjectBackend.git
 
 # TrialSync
 A MERN stack application for managing clinical trial studies, including participant data and trial phases.
