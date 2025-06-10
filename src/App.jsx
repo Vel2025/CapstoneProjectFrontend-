@@ -1,14 +1,19 @@
-import { useState } from 'react'
-
-import './App.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import TrialDetails from './pages/TrialDetails';
+import Profile from './pages/Profile';
+import Login from './components/Login';
+import Register from './components/Register'; // Ensure Register is imported
+import { useState } from 'react';
+import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isAuthenticated, setIsAuthenticated] = useState(!!localStorage.getItem('token'));
 
   return (
-  
-      <Router>
+    <Router>
       <div className="app">
         <Navbar isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />
         <Routes>
@@ -24,4 +29,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
