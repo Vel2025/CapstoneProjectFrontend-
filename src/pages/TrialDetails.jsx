@@ -10,7 +10,7 @@ function TrialDetails() {
   useEffect(() => {
     const fetchTrial = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/trials/${id}`, {
+        const response = await axios.get(`http://localhost:3000/api/trials/${id}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         setTrial(response.data);

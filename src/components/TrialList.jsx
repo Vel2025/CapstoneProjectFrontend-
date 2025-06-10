@@ -8,7 +8,7 @@ function TrialList() {
   useEffect(() => {
     const fetchTrials = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/trials', {
+        const response = await axios.get('http://localhost:3000/api/trials', {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         setTrials(response.data);

@@ -17,7 +17,7 @@ function TrialForm({ setTrials }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/trials', formData, {
+      const response = await axios.post('http://localhost:3000/api/trials', formData, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       setTrials(prev => [...prev, response.data]);
