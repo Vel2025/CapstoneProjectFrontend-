@@ -28,6 +28,7 @@ function HealthNews() {
   if (error) return <p className="error">{error}</p>;
 
   return (
+    
     <div className="health-news">
       <h2>Latest Health News</h2>
       <ul>
