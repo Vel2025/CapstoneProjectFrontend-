@@ -1,0 +1,50 @@
+.health-news {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.health-news h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.health-news ul {
+  list-style: none;
+  padding: 0;
+}
+
+.health-news li {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.health-news a {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.health-news a:hover {
+  text-decoration: underline;
+}
+
+.health-news p {
+  margin: 0.5rem 0;
+}
+
+.health-news .source {
+  font-style: italic;
+  color: #555;
+}
+
+.health-news .date {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.health-news .error {
+  color: red;
+}
