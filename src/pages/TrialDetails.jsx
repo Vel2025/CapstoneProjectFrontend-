@@ -63,6 +63,7 @@ function TrialDetails() {
       await axios.delete(`http://localhost:3000/api/trials/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
+      alert('Trial deleted');
       navigate('/dashboard');
     } catch (error) {
       console.error('Error deleting trial:', {
