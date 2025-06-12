@@ -10,8 +10,7 @@ function HealthNews() {
   useEffect(() => {
     const fetchHealthNews = async () => {
       try {
-        const response = await axios.get(
-          //`https://newsapi.org/v2/top-headlines?q=health&sortBy=publishedAt&pageSize=3&apiKey=1b7a606e624e44c8a301a9d3a6bd5879`
+        const response = await axios.get(          
         `https://newsapi.org/v2/top-headlines?q=health&sortBy=publishedAt&pageSize=3&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`
         );
         setArticles(response.data.articles);
