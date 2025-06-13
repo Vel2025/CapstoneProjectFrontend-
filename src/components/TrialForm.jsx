@@ -16,6 +16,7 @@ function TrialForm({ setTrials }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    alert("New trial created successfully");
     try {
       const response = await axios.post('http://localhost:3000/api/trials', formData, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
@@ -65,7 +66,7 @@ function TrialForm({ setTrials }) {
           onChange={handleChange}
           required
         />
-        <button type="submit">Create Trial</button>
+        <button type="submit">Create Trial</button>        
       </form>
     </div>
   );

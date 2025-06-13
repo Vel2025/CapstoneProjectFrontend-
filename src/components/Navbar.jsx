@@ -1,4 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
+//import trialLogo from "../images/Triallogo.jpg";
 
 function Navbar({ isAuthenticated, setIsAuthenticated }) {
   const navigate = useNavigate();
@@ -13,6 +14,7 @@ function Navbar({ isAuthenticated, setIsAuthenticated }) {
 
   return (
     <nav>
+      {/* <Link to="/"><img className={StyleSheet.navImg} src={trialLogo} alt = "TrialSync"/></Link> */}
       <Link to="/">Home</Link>
       {isAuthenticated ? (
         <>

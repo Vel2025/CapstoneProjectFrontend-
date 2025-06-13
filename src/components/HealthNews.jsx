@@ -29,7 +29,7 @@ function HealthNews() {
   return (
     
     <div className="health-news">
-      <h2>Latest Health News</h2>
+      <h2>Latest Health Related News</h2>
       <ul>
         {articles.map((article, index) => (
           <li key={index}>
